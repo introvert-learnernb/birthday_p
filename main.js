@@ -106,7 +106,7 @@ animate()
 //for contrast of the background image....
 
 const image = new Image();
-image.src = 'space.jpg';
+image.src = './assets/imgs/space.jpg';
 image.onload = () => {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
