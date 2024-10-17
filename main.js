@@ -6,6 +6,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 import confetti from 'canvas-confetti';
 
+console.log("hello am i being loaded...");
+
 // Create a function to trigger confetti
 function launchConfettifirst() {
   confetti({
