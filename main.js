@@ -1,4 +1,4 @@
-import '/style.css'
+import 'style.css'
 
 import * as THREE from 'three';
 
@@ -88,7 +88,7 @@ function addStar(){
 Array(200).fill().forEach(addStar);
 
 const spaceTexture = new THREE.TextureLoader().load(
-  '/space.jpg',
+  'assets/imgs/space.jpg',
   () => {
     // Success callback
     scene.background = spaceTexture;
@@ -108,7 +108,7 @@ animate()
 //for contrast of the background image....
 
 const image = new Image();
-image.src = '/assets/imgs/space.jpg';
+image.src = 'assets/imgs/space.jpg';
 image.onload = () => {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
@@ -128,7 +128,7 @@ image.onload = () => {
 
 // Avatar
 
-const preetiTexture = new THREE.TextureLoader().load('/assets/imgs/pr.jpg');
+const preetiTexture = new THREE.TextureLoader().load('assets/imgs/pr.jpg');
 
 const preeti = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -139,8 +139,8 @@ scene.add(preeti);
 
 //Moon 
 
-const moonTexture = new THREE.TextureLoader().load('/assets/imgs/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/assets/imgs/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('assets/imgs/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('assets/imgs/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
