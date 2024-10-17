@@ -126,7 +126,7 @@ image.onload = () => {
 
 // Avatar
 
-const preetiTexture = new THREE.TextureLoader().load('./pr.jpg');
+const preetiTexture = new THREE.TextureLoader().load('./assets/imgs/pr.jpg');
 
 const preeti = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -137,8 +137,8 @@ scene.add(preeti);
 
 //Moon 
 
-const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./assets/imgs/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./assets/imgs/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
